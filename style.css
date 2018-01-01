@@ -1,11 +1,14 @@
 .logo {
     background-color: rgb(219, 211, 211);
     margin-right: 10px;
+    -webkit-transform: scale(1);
+    -webkit-transition-duration: 0.5s;
 }
 
 .logo:hover {
-    background-color: rgb(220, 235, 154);
+    background-color: rgb(202, 194, 194);
     opacity: 0.8;
+    -webkit-transform: scale(1.4);
     
 }
 
@@ -43,6 +46,7 @@ a {
 
 .presentation {
     font-family: PT Sans,sans-serif;
+    justify-content: center;
     margin: 40px 10%;
     padding: 30px 0 30px 5%;
     border-top: 1px dashed #c9c9c9;
@@ -110,11 +114,20 @@ a {
 
 .icon-fb1 {
     background-color: white;
+    -webkit-transform: scale(1);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
 }
 
 .icon-fb1:hover {
-    -webkit-transition: -webkit-transform .2s linear;
-    transition: -webkit-transform .2s linear;
-    transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
+    background-color: rgb(165, 171, 204);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
 }
+
